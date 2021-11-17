@@ -6,8 +6,15 @@ import java.rmi.RemoteException;
 
 public class OperationImpl implements Operation {
     @Override
-    public double addition(double a, double b) throws RemoteException {
-        return 0.0;
+    public double addition(double a, double b) throws RemoteException
+                System.out.println("Addtion de deux nombres ");
+                System.out.println("Entrer un nombre");
+                Scanner sc = new Scanner(System.in);
+                a = sc.nextDouble();
+                System.out.println("Entrer un autre nombre");
+                b = sc.nextDouble();
+
+        return a+b ;
     }
 
     @Override
