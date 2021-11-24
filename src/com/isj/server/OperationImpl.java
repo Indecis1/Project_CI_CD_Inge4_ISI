@@ -7,12 +7,7 @@ import java.rmi.RemoteException;
 public class OperationImpl implements Operation {
     @Override
     public double addition(double a, double b) throws RemoteException
-                System.out.println("Addtion de deux nombres ");
-                System.out.println("Entrer un nombre");
-                Scanner sc = new Scanner(System.in);
-                a = sc.nextDouble();
-                System.out.println("Entrer un autre nombre");
-                b = sc.nextDouble();
+                System.out.println("La somme de" +a+ "et de " +b+ "est : " a+b);
 
         return a+b ;
     }
