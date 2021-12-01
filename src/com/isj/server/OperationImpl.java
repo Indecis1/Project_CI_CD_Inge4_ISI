@@ -6,15 +6,15 @@ import java.rmi.RemoteException;
 
 public class OperationImpl implements Operation {
     @Override
-    public double addition(double a, double b) throws RemoteException
-                System.out.println("La somme de" +a+ "et de " +b+ "est : " a+b);
-
+    public double addition(double a, double b) throws RemoteException {
+        System.out.println("La somme de " +a+ "et de " +b+ "est : "+(a + b));
         return a+b ;
     }
 
     @Override
     public double soustraction(double a, double b) throws RemoteException {
-        return 0.0;
+        System.out.println("La soustraction de " +a+ "par "+ b +"est : "+ (a-b));
+        return a-b ;
     }
 
     @Override

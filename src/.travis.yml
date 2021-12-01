@@ -1,0 +1,10 @@
+language: java
+
+# before_script:
+deploy:
+  provider: heroku
+  api_key: 039454d6-58ad-43a5-93e0-47f5b6c58a84
+    # secure: KEY
+  app: project_travis_ci_group_4
+  on:
+    repo: karl999/groupe_4_integration_continue
