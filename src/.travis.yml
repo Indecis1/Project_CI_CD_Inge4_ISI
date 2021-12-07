@@ -3,9 +3,9 @@ language: java
 # before_script:
 deploy:
   provider: heroku
-  api_key: 039454d6-58ad-43a5-93e0-47f5b6c58a84
-    # secure: KEY
+  api_key:
+    secure: L/ik+AIX8ydaIlEv4fFXriOyNhcBmeoxqlw4TIudmMCrMmUO03+WtzcjNXYfZ5KsMt7w8oFnoji2m6M2uKaE5kBIadkGnqD24vQEuIUSYTlaA1HKOd7BHA5oxw27FVck9IxzBfzX0twx+hhEjPXADGr05A0Fd21DSPAFsx5J9k2rLxLeGrsfV83Ln8cyTcWVLcOKGc3+QD9Y0whFE/xD5D73/6JCbeNjIR6gOyfuR4b3ireNUtlyllCuBQOvtwRqdu5qw4uR2Gjgc8tTz0fw0NPeQ/QT9IDsoyHZ5GHwtlzzYy4oqsIMetPLrgtFySR2WBalHvIII2otAWpmFZ0FoqPdK3mWUCL4hmT8jJw8RB4SCk2cu5g6ZIHG/masRWixV+PLrdKHzvCwZddOHqu/pcwyTEYxrlC0DaZv3/QDrm6bKI8z1USX7SSKl9gMXVhpOPEjl5IOccZBMni9PLJfLUSWb1RLRiLAnFA/ItnZmTgITafXs3jvFEu8P+32MB1YWOkuF7rFrQMoUuYBIPEt/jmd99pHynzK+/ymLK7d73BQxflFZS0JSOCmhp8hT1tT2/qVxorn/HISGDe4UARRzOwHFNNtsjwxp01u7q2+wUd2feosyDxHLd99ulNAUJ1MRWYd71XVKkQI6C/b8qIzWWz2JNjj9uN3aOGPLmf4tXg=
   app: project-travis-ci-group-4
   on:
-    repo: karl999/groupe_4_integration_continue
+    repo: Indecis1/Project_CI_CD_Inge4_ISI
     branch: main
