@@ -1,6 +1,8 @@
 language: java
 
 # before_script:
+script:
+  - jdk_switcher use openjdk8
 deploy:
   provider: heroku
   api_key:
