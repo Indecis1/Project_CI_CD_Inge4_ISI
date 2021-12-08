@@ -3,6 +3,7 @@ language: java
 # before_script:
 script:
   - jdk_switcher use openjdk8
+  - mvn clean verify
 deploy:
   provider: heroku
   api_key:
