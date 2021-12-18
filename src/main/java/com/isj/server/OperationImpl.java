@@ -14,7 +14,7 @@ public class OperationImpl implements Operation {
     @Override
     public double soustraction(double a, double b) throws RemoteException {
         System.out.println("La soustraction de " +a+ "par "+ b +"est : "+ (a-b));
-        return a-b ;
+        return a - b ;
     }
 
     @Override
