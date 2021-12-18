@@ -1,8 +1,9 @@
 language: java
 
 # before_script:
+jdk:
+  - openjdk8
 script:
-  - jdk_switcher use openjdk8
   - mvn clean verify
 deploy:
   provider: heroku
