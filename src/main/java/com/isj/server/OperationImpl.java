@@ -19,7 +19,8 @@ public class OperationImpl implements Operation {
 
     @Override
     public double multiplication(double a, double b) throws RemoteException {
-        return 0.0;
+        System.out.println("La Multiplication de " +a+ "par "+ b +"est : "+ (a*b));
+        return a * b ;
     }
 
     @Override
