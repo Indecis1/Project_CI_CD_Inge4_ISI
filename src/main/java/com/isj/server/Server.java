@@ -19,7 +19,7 @@ public class Server {
             Operation stub = (Operation) UnicastRemoteObject.exportObject(obj, 0);
 
             // Liaison de l'objet distant (stub) dans le Registre
-            Registry reg = LocateRegistry.createRegistry(1099);
+            Registry reg = LocateRegistry.createRegistry(8080);
             reg.bind("Operation", stub);
             System.out.println("Le serveur est prêt...");
 
