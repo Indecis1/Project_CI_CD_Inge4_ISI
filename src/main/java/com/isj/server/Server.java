@@ -16,8 +16,6 @@ public class Server {
             // Cree l'objet distant
             OperationImpl obj = new OperationImpl();
 
-
-
             try{
                 PORT = Integer.parseInt(port);
 
@@ -26,7 +24,7 @@ public class Server {
 
                 // Liaison de l'objet distant (stub) dans le Registre
                 Registry reg = LocateRegistry.createRegistry(PORT);
-                reg.bind("Operation", stub);
+                reg.rebind("/", stub);
                 System.out.println("Le serveur est prêt...");
             }catch (Exception e){
                 System.out.println("Le port doit être un entier");
