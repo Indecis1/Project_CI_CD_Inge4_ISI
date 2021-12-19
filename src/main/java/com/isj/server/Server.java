@@ -2,6 +2,8 @@ package com.isj.server;
 
 import com.isj.interfaces.Operation;
 
+import java.net.Inet4Address;
+import java.net.InetAddress;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
@@ -16,17 +18,18 @@ public class Server {
         try {
             // Cree l'objet distant
             OperationImpl obj = new OperationImpl();
+
             try{
                 PORT = Integer.parseInt(port);
-                URL = "project-travis-ci-group-4.herokuapp.com";
-
+                URL = "http://" + InetAddress.getLocalHost().getHostAddress() + "/";
                 // Ici, nous exportons l'objet distant vers le stub
                 Operation stub = (Operation) UnicastRemoteObject.exportObject(obj, PORT);
 
                 // Liaison de l'objet distant (stub) dans le Registre
                 Registry reg = LocateRegistry.createRegistry(PORT);
-                reg.bind(URL, stub);
+                reg.rebind(URL, stub);
                 System.out.println("Le serveur est prêt...");
+                System.out.println("L' url est: " + URL);
             }catch (Exception e){
                 System.out.println("Le port doit être un entier");
             }
