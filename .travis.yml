@@ -3,6 +3,8 @@ language: java
 # before_script:
 jdk:
   - openjdk8
+before_install:
+  - chmod +x mvnw
 script:
   - mvn clean verify
 deploy:
