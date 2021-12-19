@@ -21,7 +21,7 @@ public class Server {
 
             try{
                 PORT = Integer.parseInt(port);
-                URL = "http://" + InetAddress.getLocalHost().getHostAddress() + "/";
+                URL = "project-travis-ci-group-4.herokuapp.com";
                 // Ici, nous exportons l'objet distant vers le stub
                 Operation stub = (Operation) UnicastRemoteObject.exportObject(obj, PORT);
 
@@ -29,6 +29,7 @@ public class Server {
                 Registry reg = LocateRegistry.createRegistry(PORT);
                 reg.rebind(URL, stub);
                 System.out.println("Le serveur est prêt...");
+                System.out.println("L'Url est: " + URL);
             }catch (Exception e){
                 System.out.println("Le port doit être un entier");
             }
