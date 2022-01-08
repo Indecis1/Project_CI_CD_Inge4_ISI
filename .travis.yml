@@ -15,6 +15,7 @@ script:
 
 deploy:
   provider: script
+  skip_cleanup: true
   script:
     - rvm use $TRAVIS_RUBY_VERSION do script.rb
     - gem install dpl && gem install faraday -v 1.8.0
