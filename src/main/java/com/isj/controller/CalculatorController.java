@@ -27,14 +27,14 @@ public class CalculatorController {
         return result;
     }
 
-    /*
+    
     //Fonction de soustraction faite par Marvin BIDZANA
     @GetMapping(path = "soustraction/{x}/{y}")
     public Resultat removeWithGet(@PathVariable double x, @PathVariable double y){
         Resultat result = new Resultat();
         result.setResult(x - y);
         return result;
-    }*/
+    }
 
     //Fonction soustraction : MFATCHOUA NDAMKOU Carmella ;
 
