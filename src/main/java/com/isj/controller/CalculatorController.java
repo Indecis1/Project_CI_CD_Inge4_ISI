@@ -20,6 +20,13 @@ public class CalculatorController {
         return result;
     }
 
+    @GetMapping(path = "multiplication/{x}/{y}")
+    public Resultat multiplicationWithGet(@PathVariable double x, @PathVariable double y){
+        Resultat result = new Resultat();
+        result.setResult(x * y);
+        return result;
+    }
+
     /*
     //Fonction de soustraction faite par Marvin BIDZANA
     @GetMapping(path = "soustraction/{x}/{y}")
@@ -33,13 +40,6 @@ public class CalculatorController {
     public Resultat divisionWithGet(@PathVariable double x, @PathVariable double y){
         Resultat result = new Resultat();
         result.setResult(x / y);
-        return result;
-    }
-
-    @GetMapping(path = "multiplication/{x}/{y}")
-    public Resultat multiplicationWithGet(@PathVariable double x, @PathVariable double y){
-        Resultat result = new Resultat();
-        result.setResult(x * y);
         return result;
     }
 
