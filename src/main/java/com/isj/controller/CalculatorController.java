@@ -44,13 +44,15 @@ public class CalculatorController {
         result.setResult(x / y);
         return result;
     }
-    /*
+
+    //Fonction Modulo : Eel
+    
     @GetMapping(path = "modulo/{x}/{y}")
     public Resultat moduloWithGet(@PathVariable double x, @PathVariable double y){
         Resultat result = new Resultat();
         result.setResult(x % y);
         return result;
     }
-    */
+    
 
 }
