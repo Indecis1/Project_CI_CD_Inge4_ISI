@@ -34,7 +34,9 @@ public class CalculatorController {
         Resultat result = new Resultat();
         result.setResult(x - y);
         return result;
-    }
+    }*/
+
+    //Fonction soustraction : MFATCHOUA NDAMKOU Carmella ;
 
     @GetMapping(path = "division/{x}/{y}")
     public Resultat divisionWithGet(@PathVariable double x, @PathVariable double y){
@@ -42,7 +44,7 @@ public class CalculatorController {
         result.setResult(x / y);
         return result;
     }
-
+    /*
     @GetMapping(path = "modulo/{x}/{y}")
     public Resultat moduloWithGet(@PathVariable double x, @PathVariable double y){
         Resultat result = new Resultat();
