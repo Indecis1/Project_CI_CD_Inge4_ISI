@@ -17,6 +17,8 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
+    - echo 'export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+      [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
     - /bin/bash --login; source ~/.rvm/scripts/rvm;  rvm use 2.7.0
     #- rvm use $TRAVIS_RUBY_VERSION 2.7.0
     - gem install dpl && gem install faraday -v 1.8.0
