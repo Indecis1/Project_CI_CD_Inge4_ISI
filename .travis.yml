@@ -18,7 +18,7 @@ deploy:
   skip_cleanup: true
   script:
 
-    - echo 'export PATH="$PATH:$HOME/.rvm/bin" [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
+    #- echo 'export PATH="$PATH:$HOME/.rvm/bin" [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
     - rvm use $TRAVIS_RUBY_VERSION 2.7.0
     - gem install dpl && gem install faraday -v 1.8.0
     - dpl --provider=heroku --app="project-travis-ci-group-4" --api-key=H/OpQwGuomU0aj+VhpF8vRLbj6RDj9ZXdMkP4UL494jMn0wiMq24/HGG5g+TisaiBN9Zb1oAq33zS/aMY9YZ1SM1tc2zEvCfuWE0HZvhKAMqNbhXi2weEdvPpFbbWxF8/jj8gfgLBVj1NmqY8gPuQzQQYVMQ2leSUKuw2arKEefo8kvNCafEaiNd3LWBkMi49Y+GKA0TGhFXwts8HkIBf2irsOCedOoB/1Z/rWh9FxL/UK9+O5WL6StNGqd+meoRvHhUWhHLQjFj/XkYO0T+LjuC/Q9Fp+zMokOBJlorsbGKvpRXhIitLpR0TOUXOqIZdf9z368lLlVVLV7A91dfJWdkMyEs+9X+xX0gR0rVqI4DPqDMVnbCxQEKgh9uLkReMg0dwmHtTY+ASgsdrmKLd3IZPATpz2dFBGHJOoy2x2jv4A/5If7Kk6ioIbbZXee365iJiAoHJ+g7LPigYiTc0LzfRCSaU4n6FjEnZOs3A4tBVtuIL7eN0+Dx5heQRGEaW4nifaXTNRGmjOJYsrgWNPKRr2yEIh3P7Il4rdsdrwFkj+EQCHVnliy28RmKZEwsZn17qJxCF83E5GHvPdABdzilL3C5SNI8pLsre1Hpp3Y3mwuZ3WMYrADSrmDlEOtj0sJ+NnRWYOMugfG/2J0gctkTUs6wfCft6LPWMlEvThE=
